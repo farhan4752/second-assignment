@@ -79,8 +79,6 @@ nav a {
 }
 
 .banner_title {
-    /* padding: 105px 285px 0;
-    margin-bottom: 25px; */
     color: white;
     font-size: 64px;
     font-weight: 800;
@@ -91,10 +89,8 @@ nav a {
 .banner_description {
     color: #FFF;
     text-align: center;
-    font-size: 16px;
+    font-size: 25px;
     font-weight: 400;
-    /* padding-left: 250px;
-    padding-right: 250px;*/
     margin-bottom: 65px;
 }
 
@@ -106,7 +102,6 @@ nav a {
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.301);
     border: 0;
-    /* width: ; */
     margin: 0 auto;
 }
 
@@ -148,6 +143,10 @@ input {
     margin-bottom: 25px;
 }
 
+.popular_section ul {
+    padding-left: 40px;
+}
+
 /* destination  */
 
 .description {
@@ -168,7 +167,6 @@ input {
     font-size: 40px;
     font-weight: 800;
     margin-bottom: 25px;
-
 }
 
 .description_second {
@@ -185,17 +183,26 @@ input {
     gap: 25px;
 }
 
-.destination_img_container div {
+.destination_img_container div,
+.perfect_place_section_right {
     position: relative;
 }
 
-.destination_img_container div h3 {
+.destination_img_container div h3,
+.perfect_place_section_right h3 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white !important;
     font-size: 30px;
+    font-weight: 700;
+}
+
+.perfect_place_section_right h3 {
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
     font-weight: 700;
 }
 
@@ -237,15 +244,14 @@ input {
     border: 1px solid rgba(41, 206, 246, 0.20);
     background: rgba(41, 206, 246, 0.05);
     padding: 40px;
-
 }
 
 .best_price {
-    /* margin: 40px 300px; */
+
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+
 }
 
 .best_price>div {
@@ -264,16 +270,11 @@ input {
     font-size: 40px;
     font-weight: 800;
     margin-bottom: 25px;
-    /* margin-top: 100px; */
 }
 
 .discount_section {
     margin: 60px 0px;
 }
-
-/* ul {
-    display: flex;
-} */
 
 .discount_common {
     background-repeat: no-repeat;
@@ -339,11 +340,6 @@ input {
     justify-content: center;
 }
 
-.discount_btn {
-    /* margin: 0px 500px 50px 500px; */
-}
-
-
 .perfect_place_section {
     display: flex;
     gap: 10px;
@@ -355,10 +351,8 @@ input {
     color: #131318;
     font-size: 40px;
     font-weight: 800;
-    /* width: 448px; */
 }
 
-.perfect_place_section_right {}
 
 /* newsletter section  */
 .newsletter_section_container {
@@ -369,8 +363,7 @@ input {
 }
 
 .newsletter_left {
-    /* width: 500px; */
-    border: 2px solid orangered;
+    border: 2px solid #FF5400;
     border-radius: 15px;
     padding: 35px;
 }
@@ -394,6 +387,24 @@ input {
 
 .newsletter_contact>input {
     width: 100%;
+}
+
+.newsletter_right div {
+    position: relative;
+}
+
+.newsletter_right div p {
+    background-color: #FF5400;
+    width: 50%;
+    color: #FFF;
+    border-radius: 10px;
+    padding: 30px 30px;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    bottom: 16%;
+    left: 48%;
+    transform: rotate(-25deg);
 }
 
 footer {
@@ -422,7 +433,6 @@ footer {
 }
 
 .icon {
-    /* text-align: center; */
     margin-top: 35px;
     margin-bottom: 60px;
     display: flex;
@@ -432,8 +442,6 @@ footer {
 
 .copyright {
     text-align: center;
-    /* margin-top: 50px;
-    padding-bottom: 100px; */
     margin-top: 30px;
 }
 
@@ -506,7 +514,9 @@ footer {
 
     .popular_section_title,
     .destination_section_title,
-    .perfect_place_section_title {
+    .perfect_place_section_title,
+    .choose_us_title,
+    .discount_title {
         font-size: 20px;
     }
 
@@ -528,6 +538,10 @@ footer {
     .destination_img_container div img {
         width: 100%;
         height: 200px;
+    }
+
+    .destination_img_container div h3 {
+        font-size: 20px;
     }
 
     .choose_us_hotel_services {
@@ -558,6 +572,12 @@ footer {
         width: 90%;
     }
 
+    .discout_description {
+        font-size: 10px;
+        color: #131318;
+        font-weight: 700;
+    }
+
     .discount_btn_container {
         display: block;
         padding-left: 20px;
@@ -574,6 +594,10 @@ footer {
         margin-top: 20px;
     }
 
+    .perfect_place_section_right h3 {
+        font-size: 15px;
+    }
+
     .newsletter_section_container {
         display: block;
         width: 90%;
@@ -582,6 +606,13 @@ footer {
 
     .newsletter_left {
         margin-bottom: 10px;
+    }
+
+    .newsletter_right div p {
+        padding: 15px 5px;
+        font-size: 12px;
+        bottom: 16%;
+        left: 48%;
     }
 
     .footer_content_container {
@@ -596,8 +627,4 @@ footer {
     .discount>div {
         display: block;
     }
-
-
-
-
 }
