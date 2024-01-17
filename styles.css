@@ -527,6 +527,7 @@ footer {
     .description,
     .description_second {
         font-size: 14px;
+        padding: 0px 15px;
     }
 
 
@@ -563,6 +564,7 @@ footer {
     .discount,
     .discount_02 {
         padding: 20px;
+        margin: 0 auto;
     }
 
     .discount_common {
